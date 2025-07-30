@@ -35,4 +35,5 @@ RUN php artisan config:cache
 RUN php artisan key:generate
 
 # Lance le serveur intégré de Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=9000"]
+
