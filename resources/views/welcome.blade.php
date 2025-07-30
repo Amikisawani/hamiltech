@@ -102,7 +102,7 @@
             </div>
 
             <!-- Bloc droit : formulaire -->
-            <form method="POST" action="{{ route('commande.store') }}" class="bg-white shadow-lg rounded-lg p-8 space-y-4">
+            <form method="POST" action="{{ url('/commander') }}" class="bg-white shadow-lg rounded-lg p-8 space-y-4">
                 @csrf
 
                 <input type="text" name="nom" placeholder="Votre nom complet"
@@ -189,7 +189,7 @@
             <!-- Formulaire -->
             <div>
                 <h3 class="text-3xl font-bold mb-6">Laissez-nous un message</h3>
-                <form method="POST" action="{{ route('contact.store') }}" class="space-y-4">
+                <form method="POST" action="{{ url('/contact') }}" class="space-y-4">
                     @csrf
                     <input type="text" name="nom" placeholder="Votre nom"
                            class="w-full px-4 py-2 rounded bg-white text-gray-800 border border-gray-300 focus:ring focus:ring-indigo-300" />
