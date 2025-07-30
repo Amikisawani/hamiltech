@@ -172,8 +172,8 @@
                 <h3 class="text-3xl font-bold mb-6">Nos coordonnées</h3>
                 <p class="mb-4">
                     📍 <strong>Adresse :</strong><br>
-                    Av. Muhango 7, Quartier Kimbwala<br>
-                    Commune de Ngaliema, Kinshasa
+                    Av. Muhango 7, Quartier Kinsuka-Pecheur<br>
+                    Commune de Ngaliema, Kinshasa, RDC
                 </p>
                 <p class="mb-4">
                     📞 <strong>Téléphone :</strong><br>
