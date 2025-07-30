@@ -22,20 +22,18 @@ WORKDIR /var/www
 # Copie tout le projet
 COPY . .
 
-# Donne les bonnes permissions
-RUN chmod -R 775 storage bootstrap/cache
-
 # Installe les dépendances PHP
 RUN composer install --no-dev --optimize-autoloader
 
-# Cache la config Laravel (important)
-RUN php artisan config:cache
+# Donne les bonnes permissions à Laravel
+RUN chmod -R 775 storage bootstrap/cache
 
-# Génère la clé de l'application
-RUN php artisan key:generate
+# Copie le script de démarrage
+COPY start.sh /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start.sh
 
-# Lance le serveur intégré de Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=9000"]
-
+# Expose le port
 EXPOSE 9000
 
+# Lance le script
+CMD ["start.sh"]
