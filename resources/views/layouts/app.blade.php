@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>HamilTech | Services informatiques</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HamilTech - Services informatiques professionnels au Congo : développement, infographie, maintenance, community management...">
+    <meta name="keywords" content="développement logiciel, infographie, maintenance, community management, assistance académique, Congo">
+    <meta name="author" content="HamilTech">
+
 
     {{-- Tailwind CDN --}}
     <script src="https://cdn.tailwindcss.com"></script>
