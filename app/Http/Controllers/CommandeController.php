@@ -11,8 +11,6 @@ class CommandeController extends Controller
 {
     public function store(Request $request)
     {
-        
-        dd(config('mail.username'), config('mail.password'));
         $validated = $request->validate([
             'nom' => 'required|string|max:255',
             'email' => 'required|email',
